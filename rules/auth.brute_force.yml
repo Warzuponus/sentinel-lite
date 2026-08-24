@@ -1,0 +1,13 @@
+id: auth.brute_force
+title: Authentication brute force
+severity: high
+mitre: T1110.001
+explanation: |
+  Multiple failed logins from one source IP inside a short window usually
+  means a password-guessing tool, not a forgetful user. The detector is
+  IP-centric: usernames may change, the source does not.
+false_positives:
+  - Shared NAT or jump-host IP used by many humans
+  - Password-reset or migration scripts retrying a service account
+positive_fixture: tests/fixtures/ssh/brute_force_single_ip.log
+negative_fixture: tests/fixtures/ssh/clean_day.log

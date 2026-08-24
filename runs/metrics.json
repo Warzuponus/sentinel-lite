@@ -1,0 +1,122 @@
+[
+  {
+    "task": "002",
+    "attempt": "attempt-2",
+    "duration_s": 165.0,
+    "hermes_exit": "0",
+    "post_test_exit": null,
+    "tool_calls": null,
+    "hermes_duration": null,
+    "model": "qwen3.6:27b"
+  },
+  {
+    "task": "002",
+    "attempt": "attempt-3",
+    "duration_s": 97.0,
+    "hermes_exit": "0",
+    "post_test_exit": "0",
+    "tool_calls": 12,
+    "hermes_duration": "1m 14s",
+    "model": "qwen3.6:27b"
+  },
+  {
+    "task": "002b",
+    "attempt": "attempt-1",
+    "duration_s": 99.0,
+    "hermes_exit": "0",
+    "post_test_exit": "0",
+    "tool_calls": 17,
+    "hermes_duration": "1m 37s",
+    "model": "qwen3.6:27b"
+  },
+  {
+    "task": "003",
+    "attempt": "attempt-1",
+    "duration_s": 397.0,
+    "hermes_exit": "0",
+    "post_test_exit": "0",
+    "tool_calls": 15,
+    "hermes_duration": "6m 35s",
+    "model": "qwen3.6:27b"
+  },
+  {
+    "task": "004",
+    "attempt": "attempt-1",
+    "duration_s": 352.0,
+    "hermes_exit": "0",
+    "post_test_exit": "0",
+    "tool_calls": 11,
+    "hermes_duration": "5m 51s",
+    "model": "qwen3.6:27b"
+  },
+  {
+    "task": "005",
+    "attempt": "attempt-1",
+    "duration_s": 763.0,
+    "hermes_exit": "0",
+    "post_test_exit": "0",
+    "tool_calls": 24,
+    "hermes_duration": "12m 41s",
+    "model": "qwen3.6:27b"
+  },
+  {
+    "task": "006",
+    "attempt": "attempt-1",
+    "duration_s": 773.0,
+    "hermes_exit": "0",
+    "post_test_exit": "0",
+    "tool_calls": 27,
+    "hermes_duration": "12m 51s",
+    "model": "qwen3.6:27b"
+  },
+  {
+    "task": "007",
+    "attempt": "attempt-1",
+    "duration_s": 1023.0,
+    "hermes_exit": "0",
+    "post_test_exit": "1",
+    "tool_calls": 80,
+    "hermes_duration": "17m 2s",
+    "model": "qwen3.6:27b"
+  },
+  {
+    "task": "007b",
+    "attempt": "attempt-1",
+    "duration_s": 74.0,
+    "hermes_exit": "0",
+    "post_test_exit": "0",
+    "tool_calls": 11,
+    "hermes_duration": "1m 12s",
+    "model": "qwen3.6:27b"
+  },
+  {
+    "task": "008",
+    "attempt": "attempt-1",
+    "duration_s": 121.0,
+    "hermes_exit": "0",
+    "post_test_exit": "0",
+    "tool_calls": 16,
+    "hermes_duration": "1m 59s",
+    "model": "qwen3.6:27b"
+  },
+  {
+    "task": "009",
+    "attempt": "attempt-1",
+    "duration_s": 171.0,
+    "hermes_exit": "0",
+    "post_test_exit": "0",
+    "tool_calls": 16,
+    "hermes_duration": "2m 48s",
+    "model": "qwen3.6:27b"
+  },
+  {
+    "task": "010",
+    "attempt": "attempt-1",
+    "duration_s": 42.0,
+    "hermes_exit": "0",
+    "post_test_exit": "0",
+    "tool_calls": 6,
+    "hermes_duration": "40s",
+    "model": "qwen3.6:27b"
+  }
+]

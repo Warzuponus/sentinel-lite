@@ -1,0 +1,4 @@
+{"ts": "2024-01-15T08:00:01Z", "ip": "198.51.100.10", "user": "alice", "ok": true, "svc": "webapp"}
+{"ts": "2024-01-15T08:15:22Z", "ip": "198.51.100.11", "user": "bob", "ok": true, "svc": "webapp"}
+{"ts": "2024-01-15T09:00:00Z", "ip": "198.51.100.12", "user": "charlie", "ok": false, "svc": "webapp"}
+{"ts": "2024-01-15T09:00:05Z", "ip": "198.51.100.12", "user": "charlie", "ok": true, "svc": "webapp"}

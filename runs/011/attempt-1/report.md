@@ -1,0 +1,23 @@
+# Task 011 done report
+- Status: green
+- Attempts: 1
+- Files changed:
+  - `src/sentinel_lite/dac.py` (created) — `RuleValidationError`, frozen `Rule` dataclass, `load_rules`, `lint_rules`, `explain_rule`
+  - `src/sentinel_lite/cli.py` (rules subcommands only) — `rules list|lint|explain` with per-subcommand `--rules-dir` (default `rules`), `_run_rules` dispatcher
+  - `rules/*.yml` — untouched (planner-written, all three already valid)
+  - `tests/test_dac_rules.py` — untouched (no test bugs found)
+- Commands run:
+  - `pytest tests/test_dac_rules.py -q` → 8 passed, exit 0
+  - `pytest -q` → 52 passed, exit 0 (no regressions)
+  - `python -m sentinel_lite.cli rules lint` → prints `ok`, exit 0
+  - `python -m sentinel_lite.cli rules explain auth.brute_force` → prints `T1110.001`, exit 0
+  - Spot checks: no subcommand → exit 2; `rules explain auth.not_a_rule` → exit 1; `rules list` → one `id<TAB>title` line per rule, exit 0
+- Residual risks / ambiguities:
+  - `--rules-dir` is defined on each `rules` subparser (not the `rules` parent) because the planner's tests pass it after the subcommand (`rules list --rules-dir DIR`). `rules --rules-dir X list` would be rejected; the test contract was followed.
+  - `lint` prints problems to stderr and `ok` to stdout; tests only assert the return code, so this is safe.
+  - `explain_rule` raises `RuleValidationError` for both unknown ids and invalid packs (task allows either for unknown id; CLI maps to exit 1).
+  - `load_rules` raises on the first invalid file (joining that file's problems); multi-file problem accumulation is the `lint_rules` path.
+- Notes for reviewer:
+  - Validation enforces: all 8 required keys, id ∈ {auth.brute_force, auth.password_spray, auth.success_after_fail}, id == filename stem, non-empty title/explanation/mitre/fixtures, severity ∈ {low, medium, high, critical}, false_positives a list of strings.
+  - No new dependencies (only `yaml` + stdlib `dataclasses`); no detector/model/schema changes; no network.
+  - Diff limited to the allowlist.

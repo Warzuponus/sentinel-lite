@@ -1,0 +1,7 @@
+{"ts": "2024-01-15T10:00:01Z", "ip": "203.0.113.50", "user": "admin", "ok": false, "svc": "webapp"}
+{"ts": "2024-01-15T10:00:15Z", "ip": "203.0.113.50", "user": "admin", "ok": false, "svc": "webapp"}
+{"ts": "2024-01-15T10:00:30Z", "ip": "203.0.113.50", "user": "admin", "ok": false, "svc": "webapp"}
+{"ts": "2024-01-15T10:00:45Z", "ip": "203.0.113.50", "user": "admin", "ok": false, "svc": "webapp"}
+{"ts": "2024-01-15T10:01:00Z", "ip": "203.0.113.50", "user": "admin", "ok": false, "svc": "webapp"}
+{"ts": "2024-01-15T10:01:20Z", "ip": "203.0.113.50", "user": "admin", "ok": false, "svc": "webapp"}
+{"ts": "2024-01-15T10:05:00Z", "ip": "198.51.100.10", "user": "alice", "ok": true, "svc": "webapp"}

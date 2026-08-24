@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+src/*.egg-info/
+.eggs/
+.pytest_cache/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Local config and secrets (never commit real logs with PII)
+config.yaml
+*.pem
+*.key
+findings.json
+
+# Local orchestrator state
+.orchestrator/
+
+# Agent run noise (keep reports/metrics; logs stay local)
+runs/**/attempt-*/hermes.log
+runs/**/attempt-*/post_test.log
+runs/**/attempt-*/test.log
+runs/**/attempt-*/patch.diff
+runs/**/attempt-*/prompt.md
+runs/parallel/
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store

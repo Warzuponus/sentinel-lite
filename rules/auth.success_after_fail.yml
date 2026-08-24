@@ -1,0 +1,13 @@
+id: auth.success_after_fail
+title: Success after failed attempts
+severity: critical
+mitre: T1110
+explanation: |
+  A valid login immediately after several failures for the same username
+  often means the attacker guessed correctly (or the user was phished and
+  the password was replayed). Treat as a possible compromise, not noise.
+false_positives:
+  - User mistypes then succeeds (below fail_threshold)
+  - Admin unlock flow that records failures then a legitimate success
+positive_fixture: tests/fixtures/ssh/success_after_fails.log
+negative_fixture: tests/fixtures/ssh/clean_day.log
